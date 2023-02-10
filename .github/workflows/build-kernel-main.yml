@@ -78,9 +78,9 @@ jobs:
         export KBUILD_BUILD_HOST=Github-Action
         export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
         chmod +x ./build.sh
-        bash ./build.sh make_defconfig
-        bash ./build.sh build_kernel
-        bash ./build.sh link_all_dtb_files
+        ./build.sh make_defconfig
+        ./build.sh build_kernel
+        ./build.sh link_all_dtb_files
 
     - name: Make Anykernel for your kernel
       run: |
