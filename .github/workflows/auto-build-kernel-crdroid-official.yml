@@ -1,7 +1,7 @@
-name: 自动构建内核(按照官网配置KSU)
+name: 自动构建crdroid仓库内核(按照官网配置KSU)
 on:
   schedule:
-    - cron: '30 19 * * 2,4,6'
+    - cron: '30 11 * * 2,4,6'
 
 jobs:
   build:
