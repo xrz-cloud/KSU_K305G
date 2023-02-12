@@ -1,7 +1,8 @@
 name: 自动构建crdroid仓库内核(按照官网配置KSU)
 on:
   schedule:
-    - cron: '30 11 * * 2,4,6'
+    - cron: '0 11 * * 0,2,4,6'
+  workflow_dispatch:
 
 jobs:
   build:
