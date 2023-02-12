@@ -60,7 +60,7 @@ jobs:
         git clone ${{ env.KERNEL_SOURCE }} -b ${{ env.KERNEL_SOURCE_BRANCH }} android-kernel --depth=1
     - name: Setup KernelSU
       run: |
-        cd $GITHUB_WORKSPACE/kernel_workspace/android-kernelset -eux
+        cd $GITHUB_WORKSPACE/kernel_workspace/android-kernelset
         GKI_ROOT=$(pwd)
         echo "[+] GKI_ROOT: $GKI_ROOT"
         if test -d "$GKI_ROOT/common/drivers"; then
